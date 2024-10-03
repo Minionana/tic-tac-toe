@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(231, 208, 176)
+}
+
+.centerer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.canvas{
+    border-spacing: 10px;
+    width: 75%;
+    max-width: 80vh;
+    height: auto;
+    max-height: 80vh;
+    aspect-ratio: 1;
+}
+
+.box{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+    width: calc(75vmin / 3 - 75px);
+    aspect-ratio: 1;
+}
+
+.none{
+    font-size: calc(75vmin / 3 - 75px);
+    color: transparent;
+}
+
+.oIcon{
+    font-size: calc(75vmin / 3 - 75px);
+    font-weight: bold;
+    color: darkseagreen;
+    
+}
+
+.xIcon{
+    font-size: calc(75vmin / 3 - 75px);
+    color: indianred;
+}
+
+.score{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Teko";
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px 3px 0px;
+}
+
+.oScore{
+    background-color: darkseagreen;
+    transform: rotate(180deg);
+}
+
+.xScore{
+    background-color: indianred;
+}
+
+@keyframes oFadeIn {
+    0% {background-color: antiquewhite;}
+    100% {background-color: seagreen;}
+}
+
+@keyframes xFadeIn {
+    0% {background-color: antiquewhite;}
+    100% {background-color: brown;}
+}
+
+@keyframes oFadeOut {
+    0% {background-color: seagreen;}
+    100% {background-color: antiquewhite;}
+}
+
+@keyframes xFadeOut {
+    0% {background-color: brown;}
+    100% {background-color: antiquewhite;}
+}
+
+@keyframes drawFadeIn {
+    0% {background-color: antiquewhite;}
+    100% {background-color: rgb(230, 184, 116)}
+}
+
+@keyframes drawFadeOut {
+    0% {background-color: rgb(230, 184, 116)}
+    100% {background-color: antiquewhite;}
+}
+
+@keyframes iconFadeOut {
+    100% {color: transparent;}
+}
+
+.blocker{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    position: fixed;
+    pointer-events: none;
+}

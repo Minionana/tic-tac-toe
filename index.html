@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <title>Tic-Tac-Toe</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="assets/images/tictactoe.png" type="image/x-icon">
+</head>
+<body>
+    <div class="blocker"></div>
+    <div class="centerer">
+        <div class="oScore score" id="oScore">0</div>
+        <table id="canvas" class="canvas">
+            <tr>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+            </tr>
+            <tr>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+            </tr>
+            <tr>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+                <td class="box"><i class="fa-solid fa-minus none"></i></td>
+            </tr>
+        </table>
+        <div class="xScore score" id="xScore">0</div>
+    </div>
+
+    <audio id="place" src="assets/audio/place.ogg"></audio>
+    <audio id="win" src="assets/audio/win.ogg"></audio>
+    <audio id="draw" src="assets/audio/draw.ogg"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
