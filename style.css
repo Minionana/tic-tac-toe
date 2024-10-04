@@ -13,10 +13,8 @@ body{
 
 .canvas{
     border-spacing: 10px;
-    width: 100vw;
-    height: 100vw;
-    max-width: 70vmin;
-    max-height: 70vmin;
+    width: 70vmin;
+    height: 70vmin;
 }
 
 .box{
@@ -36,7 +34,6 @@ body{
     font-size: calc(75vmin / 3 - 75px);
     font-weight: bold;
     color: darkseagreen;
-    
 }
 
 .xIcon{
