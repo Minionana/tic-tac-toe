@@ -32,6 +32,7 @@ function start(){
         let box = boxes[i]
         box.addEventListener("click", ()=> {
             {
+                placeAudio.muted = false
                 placeAudio.play()
                 let icon = box.firstChild
                 if (icon.className != "fa-solid fa-minus none"){
@@ -119,6 +120,7 @@ function checkWin(sum){
     }
     
     if (moves.every((move)=> {return move != 0}) && sum == 15){
+        drawAudio.muted = false
         drawAudio.play()
         draw = true
         boxes.forEach(box => {
@@ -135,6 +137,7 @@ function checkWin(sum){
 }
 
 function display(positions, color){
+    winAudio.muted = false
     winAudio.play()
     if (color == "seagreen"){
         oScore += 1
