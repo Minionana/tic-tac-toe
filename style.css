@@ -13,11 +13,10 @@ body{
 
 .canvas{
     border-spacing: 10px;
-    width: 75%;
-    max-width: 80vmin;
-    height: auto;
-    max-height: 80vmin;
-    aspect-ratio: 1;
+    width: 100vw;
+    height: 100vw;
+    max-width: 70vmin;
+    max-height: 70vmin;
 }
 
 .box{
@@ -27,7 +26,7 @@ body{
     text-align: center;
     background-color: antiquewhite;
     width: calc(75vmin / 3 - 75px);
-    aspect-ratio: 1;
+    height: calc(75vmin / 3 - 75px);
 }
 
 .none{
@@ -49,8 +48,8 @@ body{
 
 .score{
     display: flex;
-    width: 50px;
-    height: 50px;
+    width: 10vmin;
+    height: 10vmin;
     justify-content: center;
     align-items: center;
     font-family: "Teko";
