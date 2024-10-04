@@ -14,9 +14,9 @@ body{
 .canvas{
     border-spacing: 10px;
     width: 75%;
-    max-width: 80vh;
+    max-width: 80vmin;
     height: auto;
-    max-height: 80vh;
+    max-height: 80vmin;
     aspect-ratio: 1;
 }
 
